@@ -1,6 +1,6 @@
 # NgxMoviesApp
 
-movies app using [TMDB](https://www.themoviedb.org)
+movies app using [TMDB](https://www.themoviedb.org) : The Movie Database
 
 ## Libraries
 
