@@ -4,10 +4,12 @@
       <img src="assets/blue_long.svg" alt="Movies Logo" />
     </a>
     <ul class="navbar-links">
-      <li>Home</li>
-      <li>TV Shows</li>
-      <li>Categories</li>
-      <li>Genres</li>
+      <li><a role="button" [routerLink]="['/']">Home</a></li>
+      <li><a role="button" [routerLink]="['/shows']">TV Shows</a></li>
+      <li>
+        <a role="button" [routerLink]="['/categories']">Categories</a>
+      </li>
+      <li><a role="button" [routerLink]="['/genres']">Genres</a></li>
     </ul>
   </nav>
 </header>

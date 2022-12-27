@@ -22,6 +22,11 @@ const routes: Routes = [
     path: 'genres',
     component: GenresComponent,
   },
+  {
+    path: '**',
+    pathMatch: 'full',
+    redirectTo: '',
+  },
 ];
 
 @NgModule({
