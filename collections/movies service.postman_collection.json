@@ -1,0 +1,33 @@
+{
+	"info": {
+		"_postman_id": "814cf3da-9f09-41d9-8321-3c4661f85698",
+		"name": "movies service",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "15585319"
+	},
+	"item": [
+		{
+			"name": "Upcoming Movies",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{hostname}}/upcoming?api_key={{api_key}}",
+					"host": [
+						"{{hostname}}"
+					],
+					"path": [
+						"upcoming"
+					],
+					"query": [
+						{
+							"key": "api_key",
+							"value": "{{api_key}}"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

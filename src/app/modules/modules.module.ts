@@ -6,6 +6,7 @@ import { HomeComponent } from './components/home/home.component';
 import { ShowsComponent } from './components/shows/shows.component';
 import { CategoriesComponent } from './components/categories/categories.component';
 import { GenresComponent } from './components/genres/genres.component';
+import { MoviesComponent } from './components/movies/movies.component';
 
 
 @NgModule({
@@ -13,7 +14,8 @@ import { GenresComponent } from './components/genres/genres.component';
     HomeComponent,
     ShowsComponent,
     CategoriesComponent,
-    GenresComponent
+    GenresComponent,
+    MoviesComponent
   ],
   imports: [
     CommonModule,
