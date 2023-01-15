@@ -47,6 +47,19 @@
       .meta {
         font-size: 1.5rem;
         color: $white;
+        .info {
+          > span {
+            &:not(:last-child):after {
+              content: "|";
+              margin-right: 9px;
+              margin-left: 9px;
+            }
+          }
+        }
+      }
+      .description {
+        font-size: 1.3rem;
+        line-height: 1.6;
       }
     }
   }
