@@ -1,6 +1,6 @@
 <div class="slider">
   <ng-container *ngFor="let movie of movies; let i = index">
-    <div class="slide" @fade *ngIf="i == 1">
+    <div class="slide" @fade *ngIf="i == curentSlideIndex">
       <div class="slide-bg">
         <img
           class="slide-bg-img"
@@ -8,7 +8,7 @@
           alt=""
         />
         <div class="slide-pane">
-          <h2 class="name">{{ movie.title }} - {{ i }}</h2>
+          <h2 class="name">{{ movie.title }}</h2>
           <div class="meta">
             <div class="info">
               <span class="rating">
@@ -17,7 +17,6 @@
                   {{ movie.vote_average }}
                 </span></span
               >
-              <span>/10</span>
               <span>{{ movie.vote_count }} Reviews</span>
               <span>{{ movie.release_date | date : "fullDate" }}</span>
             </div>

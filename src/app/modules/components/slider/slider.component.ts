@@ -5,7 +5,7 @@ import {
   transition,
   trigger,
 } from '@angular/animations';
-import { Component, Input } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 import { Movies } from '../../../core/types/movies.interfaces';
 
 @Component({
@@ -19,6 +19,14 @@ import { Movies } from '../../../core/types/movies.interfaces';
     ]),
   ],
 })
-export class SliderComponent {
+export class SliderComponent implements OnInit {
   @Input() movies: Movies[] = [];
+  curentSlideIndex: number = 0;
+
+  ngOnInit(): void {
+    // increase currentSlider every 5 seconds
+    setInterval(() => {
+      this.curentSlideIndex++;
+    }, 5000);
+  }
 }
