@@ -9,6 +9,7 @@ import { GenresComponent } from './components/genres/genres.component';
 import { MoviesComponent } from './components/movies/movies.component';
 import { SliderComponent } from './components/slider/slider.component';
 import { BannerComponent } from './components/banner/banner.component';
+import { BannerItemComponent } from './components/banner-item/banner-item.component';
 
 @NgModule({
   declarations: [
@@ -19,6 +20,7 @@ import { BannerComponent } from './components/banner/banner.component';
     MoviesComponent,
     SliderComponent,
     BannerComponent,
+    BannerItemComponent,
   ],
   imports: [CommonModule, ModulesRoutingModule],
 })
