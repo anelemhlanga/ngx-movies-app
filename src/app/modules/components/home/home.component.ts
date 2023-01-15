@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import * as _ from 'lodash';
-import { Observable } from 'rxjs';
 import { MoviesService } from 'src/app/core/services/movies.service';
 import { Movies } from '../../../core/types/movies.interfaces';
 
