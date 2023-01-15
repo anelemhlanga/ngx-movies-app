@@ -8,6 +8,7 @@ import { CategoriesComponent } from './components/categories/categories.componen
 import { GenresComponent } from './components/genres/genres.component';
 import { MoviesComponent } from './components/movies/movies.component';
 import { SliderComponent } from './components/slider/slider.component';
+import { BannerComponent } from './components/banner/banner.component';
 
 @NgModule({
   declarations: [
@@ -17,6 +18,7 @@ import { SliderComponent } from './components/slider/slider.component';
     GenresComponent,
     MoviesComponent,
     SliderComponent,
+    BannerComponent,
   ],
   imports: [CommonModule, ModulesRoutingModule],
 })
