@@ -26,7 +26,8 @@ export class SliderComponent implements OnInit {
   ngOnInit(): void {
     // increase currentSlider every 5 seconds
     setInterval(() => {
-      this.curentSlideIndex++;
+      // logic to calculate when slider ends
+      this.curentSlideIndex = ++this.curentSlideIndex % this.movies.length;
     }, 5000);
   }
 }
